@@ -1,0 +1,13 @@
+<form name ="student" method ="post"  action ="/addstudent">
+    Rollnumber:<br><input name = "rollno"  type ="text" > <br>
+    Firstname:<br><input name= "fstnme"  type ="text" ><br>
+    Lastname:<br><input name = "lstnme"  type ="text" ><br>
+    Email:<br><input name = "mail"  type ="email"><br>
+    Gender:<br><input name = "gender"  type ="text" ><br>
+    Marks:<br><input name = "marks"  type ="text" ><br>
+    <input type="submit" value="add">
+
+</form>
+{{#if data}}
+    <p>{{data}}</p>
+{{/if}}

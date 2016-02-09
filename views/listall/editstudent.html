@@ -1,0 +1,14 @@
+<form name ="student" method ="post"  action ="/editstudent">
+    Rollnumber:<br><input name = "rollno"  type ="text" value= {{data.rollnumber}}> <br>
+    <input name = "id"  type ="hidden" value= {{data.id}}>
+    Firstname:<br><input name= "fstnme"  type ="text"  value= {{data.firstName}}><br>
+    Lastname:<br><input name = "lstnme"  type ="text"  value= {{data.lastName}}><br>
+    Email:<br><input name = "mail"  type ="email" value= {{data.email}}><br>
+    Gender:<br><input name = "gender"  type ="text" value= {{data.gender}}><br>
+    Marks:<br><input name = "marks"  type ="text" value= {{data.marks}}><br>
+    <input type="submit" value="update">
+
+</form>
+{{#if message}}
+    <p>{{message}}</p>
+{{/if}}
